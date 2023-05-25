@@ -251,11 +251,11 @@ public class ConnectPlugin extends CordovaPlugin {
         AppEventsLogger.activateApp(cordova.getActivity().getApplication());
     }
 
-    @Override
-    public void onPause(boolean multitasking) {
-        super.onPause(multitasking);
-        AppEventsLogger.deactivateApp(cordova.getActivity().getApplication());
-    }
+    // @Override
+    // public void onPause(boolean multitasking) {
+    //     super.onPause(multitasking);
+    //     AppEventsLogger.deactivateApp(cordova.getActivity().getApplication());
+    // }
 
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent intent) {
